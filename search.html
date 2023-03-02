@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p class="one">This is test 01</p>
+		<p class="one">This is test 02</p>
+		<p class="three">This is test 03</p>
+		<h1 id="title">This is Heading</h1>
+
+		<form action="">
+			<label for="">male</label>
+			<input type="radio" name="gender" id="" />
+			<label for="">Female</label>
+			<input type="radio" name="gender" id="" />
+			<label for="">Other</label>
+			<input type="radio" name="gender" id="" />
+		</form>
+		<br />
+
+		<button onclick="change()">Click Me</button>
+
+		<script>
+			const change = () => {
+				//inspect one by one
+				// Directly change
+				// document.getElementById("title").innerHTML = "Welcome Home...";
+				// another way: By taking referance
+				// const temp = document.getElementById("title");
+				// temp.innerHTML = "Welcome Home...";
+				// access the class
+				// console.log(document.getElementsByClassName("one"));
+				// access the tag
+				// console.log(document.getElementsByTagName("p"));
+				// access using name attribute
+				// console.log(document.getElementsByName("gender"));
+				// another way: By using query selectors
+				// document.querySelector("#title").innerHTML = "Welcome Home Again.....";
+				// for query selector it returns the first matching value.
+				// document.querySelector(".one").innerHTML = "Welcome Home Again.....";
+				// querySlectorAll() will return all the elements
+				// console.log(document.querySelectorAll(".one"));
+				// console.log(document.querySelectorAll("#title"));
+			};
+		</script>
+	</body>
+</html>

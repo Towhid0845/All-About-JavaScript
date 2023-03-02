@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.main {
+				margin: auto;
+				width: 50%;
+			}
+			.one,
+			.two,
+			.three,
+			.four {
+				width: 100px;
+				border: 2px solid #000;
+				text-align: center;
+				background-color: bisque;
+				margin-bottom: 10px;
+			}
+			.one a,
+			.two a,
+			.three a,
+			.four a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<h2>Different Types of Event in JavaScript</h2>
+			<!-- 🔥 First Way 🔥 -->
+			<div class="one">
+				<a href="#" onclick="alert('I am Towhiduzzaman')">
+					<span>simple inline alert()</span>
+				</a>
+			</div>
+
+			<!-- 🔥 Second Way 🔥 -->
+			<div class="two">
+				<a href="#" onclick="callFunction()">
+					<span>By calling a Function</span>
+				</a>
+			</div>
+
+			<!-- 🔥 Third Way 🔥 -->
+			<div class="three">
+				<a href="#">
+					<span id="thirdWay">Inline event</span>
+				</a>
+			</div>
+
+			<!-- 🔥 4th Way 🔥 -->
+			<div class="four">
+				<!-- we can also use 'class' or 'tag' -->
+				<a href="#" id="fourWay">
+					<span>Event Listeners</span>
+				</a>
+			</div>
+		</div>
+		<script>
+			// 🔥 2th Way 🔥
+			const callFunction = () => {
+				alert("I am Towhiduzzaman By calling");
+			};
+
+			// 🔥 3rd Way 🔥
+			const thirdWay = document.getElementById("thirdWay");
+			thirdWay.onclick = function () {
+				alert("I am Towhiduzzaman by Inline event...");
+			};
+			// 🙋‍♂️👨‍🏫 risehDisadvantage of this approach: Function Overriding
+			// Same function bar bar call korle, It will work for last call only.
+			// thirdWay.onclick = function () {
+			// 	console.log("I am Towhiduzzaman by Inline event...");
+			// };
+
+			// 🔥 4th Way 🔥
+			const fourWay = document.querySelector("#fourWay");
+			fourWay.addEventListener("click", () => {
+				alert("I am Towhiduzzaman by EventListener...");
+			});
+			// 🙋‍♂️👨‍🏫 Advantage of thid approach: No overriding problem
+			// We can call same function again and again
+			fourWay.addEventListener("click", () => {
+				console.log("I am Towhiduzzaman by EventListener...");
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.main {
+				margin: auto;
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<p>Want to know my name ?</p>
+			<p id="showName"></p>
+			<br />
+			<button id="btn">click here</button>
+		</div>
+		<script>
+			const myName = document.querySelector("#showName");
+			const btn = document.querySelector("#btn");
+
+			const showMyName = () => {
+				myName.innerHTML = "Loading...";
+				setTimeout(() => {
+					myName.innerHTML = "Towhiduzzaman";
+				}, 1000);
+			};
+			btn.addEventListener("click", showMyName);
+		</script>
+	</body>
+</html>

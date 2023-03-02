@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.main {
+				margin: auto;
+				width: 50%;
+			}
+			.one {
+				width: 100px;
+				border: 2px solid #000;
+				text-align: center;
+				background-color: bisque;
+				margin-bottom: 10px;
+				padding: 10px;
+			}
+			.one a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<h1>Let's See what is Event Object 😃</h1>
+			<div class="one">
+				<a href="#" id="fourWay">
+					<span>Event Listeners</span>
+				</a>
+			</div>
+		</div>
+		<script>
+			const fourWay = document.getElementById("fourWay");
+			const checkEvent = () => {
+				alert("I am Towhiduzzaman by Event Object");
+				console.log(event);
+				console.log(event.target);
+				console.log(event.type);
+			};
+			fourWay.addEventListener("click", checkEvent);
+		</script>
+	</body>
+</html>

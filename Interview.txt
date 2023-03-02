@@ -1,0 +1,103 @@
+// 🙋‍♂️👨‍🏫 Interview Questions 🙋‍♂️👨‍🏫
+----------------------------------
+
+🌟 Bugs in JavaScript 🌟
+    🗄️ subtract string from a number (see in index.js)
+    🗄️ type of null is object (see in index.js)
+
+🌟 Difference between null vs undefined? 🌟 
+    🗄️ see detail 'null value in JS' and 'undefined datatype' in JS in 'index.js'
+
+
+🌟 What is NaN? 🌟
+    🗄️ see the detail of 'NaN in JS' in 'index.js' file.
+
+
+🌟 var vs let vs const 🌟
+    🗄️ see the detail of 'var, let and const' in 'index.js' file.
+
+
+🌟 What is the Difference between == vs === ? 🌟
+    🗄️ see the detail of 'comparison operator' in 'index.js' file.
+
+
+🌟 Why Functions? 🌟 
+    You can reuse code: Define the code once, and use it many times.
+    You can use the same code many times with different arguments, 
+    to produce different results.
+    
+    OR
+
+    A function is a group of reusable code which can be called anywhere 
+    in your program. This eliminates the need of writing the same code 
+    again and again.
+
+    DRY => do not repeat yourself
+
+
+🌟 Reduce method 🌟
+    🗄️ see the detail of 'reduce method' in 'index.js' file.
+
+
+🌟 Difference between getElementById and querySelector 🌟
+    ✅ getElementById 
+    Syntex: 
+    element = document.getElementById(id);
+        it returns a reference to the element by its ID.
+        If the element with specified ID is not in the document, then it will returns null.
+
+    ✅ querySelector()
+    Syntex:
+    element = document.querySelector(selector);
+        It returns the first element within the document that matches the specified group of selectors 
+        or null if no matches are found.
+    🗄️ Example is in 'search.html' file.
+
+
+🌟 Difference Between onclick and addEventListener 🌟
+    addEventListener does not overwrite existing event handlers,
+    whereas onclick overrides any existing onclick event handlers.
+
+    🗄️ visit 'eventTypes.html' to see the example in detail.
+
+
+🌟 Difference between setTimeout() and setInterval() 🌟
+    setTimeout(function, miliseconds) : It executes a funciton, after
+    waiting a specific number of milliseconds.
+    
+    setInterval(function, milliseconds): It is same as setTimeout(), but
+    repeats the execution of the function continuously.
+
+    🗄️ visit 'TimingEvents' folder to see 'setTimeout.html' and 'setInterval.html'
+
+
+🌟 How to get Dynamic Data in an Object 🌟
+    🗄️ see the detail of 'Object Properties' in index.js
+
+
+🌟 Difference Between Higher Order Function and Callback Function 🌟
+    🗄️ see the detail of 'Advanced JavaScript' section in index.js
+    
+
+🌟 What is Lexical Scoping in JavaScript 🌟
+    🗄️ see the detail in 'lexical scoping' in index.js
+
+
+🌟 Difference between synchronous and asynchronoum JavaScript 🌟
+    synchronous programming follows FCFS (first come first serve) approach
+    whereas asynchronous programming follows SJF (shortest job first) approach.
+
+    🗄️ see the detail of 'Synchronous Programming in JS' in index.js
+
+
+🌟 What is event loop in JavaScript 🌟
+    🗄️ see the detail of 'The Event Loop in JavaScript' in index.js
+
+
+🌟 What is the output of sum(5)(3)(8) 🌟
+    🗄️ see the detail of 'Curring' in index.js
+
+
+
+Towhiduzzaman
+Tamanna Tasnim

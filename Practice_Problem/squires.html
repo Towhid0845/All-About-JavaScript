@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.sqr {
+				background: #645454;
+				width: 50px;
+				height: 50px;
+				float: left;
+				margin-right: 10px;
+				position: relative;
+				/* if you use flex then you don't need to use position */
+				/* display: flex;
+				justify-content: center;
+				align-items: center; */
+			}
+			.sqr:last-child {
+				margin-right: 0px;
+			}
+			.sqr .circle {
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: aliceblue;
+				/* margin: -10px 0 0 -10px; */
+				transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="sqr">
+				<div class="circle"></div>
+			</div>
+			<div class="sqr">
+				<div class="circle"></div>
+			</div>
+			<div class="sqr">
+				<div class="circle"></div>
+			</div>
+		</div>
+	</body>
+</html>

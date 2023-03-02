@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.main {
+				margin: auto;
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<label for="">Your Name 👉</label>
+			<input type="text" name="" id="fruit" />
+			<br />
+			<label for=""
+				>Choose a fruit 🥰
+				<select name="fruit" id="fruitItem" onchange="selectFruit()">
+					<!-- for 'addEventListener' onchange is not needed-->
+					<!-- <select name="fruit" id="fruitItem"> -->
+					<option value="">Select One...</option>
+					<option value="apple">Apple</option>
+					<option value="mango">Mango</option>
+					<option value="orange">Orange</option>
+					<option value="banana">Banana</option>
+				</select>
+			</label>
+			<br />
+			<div id="result"></div>
+		</div>
+		<script>
+			const selectFruit = () => {
+				const inputChange = document.getElementById("fruit").value;
+				const fruitName = document.getElementById("fruitItem").value;
+				// console.log(`${inputChange} and ${fruitName}`);
+				const result = document.getElementById("result");
+				result.innerHTML = `I am ${inputChange} is selecting ${fruitName} for me.`;
+			};
+
+			// Using addEventListener, same thing can be done.
+			// const fruitName = document.getElementById("fruitItem");
+			// fruitName.addEventListener("change", () => {
+			// 	const inputChange = document.getElementById("fruit").value;
+			// 	const fruitName = document.getElementById("fruitItem").value;
+			// 	const result = document.getElementById("result");
+			// 	result.innerHTML = `I am ${inputChange} selecting ${fruitName} for me.`;
+			// });
+		</script>
+	</body>
+</html>

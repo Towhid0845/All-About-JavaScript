@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=
+    , initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			.main {
+				margin: auto;
+				width: 50%;
+			}
+			.parent {
+				margin: auto;
+				width: 200px;
+				height: 200px;
+				background-color: burlywood;
+				padding: 50px;
+				/* border: 5px solid #000; */
+				box-sizing: border-box;
+			}
+			.child {
+				margin: auto;
+				width: 100px;
+				height: 100px;
+				background-color: blueviolet;
+				border: 4px solid #000;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main" id="parentID">
+			<div class="parent">
+				<div class="child" id="childID"></div>
+			</div>
+		</div>
+		<script>
+			const parentId = document.getElementById("parentID");
+			const childId = document.getElementById("childID");
+			const parentCall = () => {
+				alert("Parent is calling...");
+			};
+			const childCall = () => {
+				alert("Child is calling...");
+				// if we want to stop default Bubble Phase event then use stopPropagation()
+				event.stopPropagation();
+			};
+			// the third argument is to flip the Phase (Bubble to Capture and vice varsa)
+			// by deafult it is false (which is bubble phase)
+			parentId.addEventListener("click", parentCall, false);
+			childId.addEventListener("click", childCall, false);
+			// parentId.addEventListener("click", parentCall, true);
+			// childId.addEventListener("click", childCall, true);
+		</script>
+	</body>
+</html>
