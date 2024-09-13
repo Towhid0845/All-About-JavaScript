@@ -143,10 +143,31 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 
-// Destructuring
-
+// access data using id
 const book = getBook(3);
-console.log(book);
+// console.log(book);
+
+// old way of object destructuring
+// const title = book.title;
+// const author = book.author;
+// console.log(title);
+// console.log(author);
+
+// New way of object Destructuring
+const { title, author, genres } = book;
+// console.log(`${title}, ${author}, ${genres}`);
+
+// old way of array destructuring
+// const primaryGenra = genres[0];
+// const secondaryGenra = genres[1];
+// console.log(`${primaryGenra}, ${secondaryGenra}`);
+
+// const [primaryGenra, secondaryGenra] = genres;
+// console.log(primaryGenra, secondaryGenra);
+
+// spread operator in array destructuring
+const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
+console.log(primaryGenre, secondaryGenre, otherGenres);
 
 /*
   
