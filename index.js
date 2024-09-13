@@ -225,6 +225,8 @@
 //
 // 5️⃣ Destructuring in ES6 🔥
 
+// ✅ Destructuring details in Destructure folder.
+
 // ✅ Array Destructuring
 // const bioData = ["towhid", "zaman", 26];
 
@@ -236,7 +238,7 @@
 
 // by applying array destructuring we can do this very simply and efficiently.
 // let [fName, lName, age] = bioData;
-// console.log(age);
+// console.log(fName);
 
 // we can add values too
 // let [fName, lName, age, edu = "BSC"] = bioData;
