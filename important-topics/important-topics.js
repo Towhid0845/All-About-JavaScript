@@ -293,54 +293,65 @@ const books = getBooks();
 //   .map((book) => book.title);
 // console.log(adventureBooks);
 
-/*-------------------
- 🔥 🔥
--------------------*/
+/*-------------------------------
+ 🔥Reduce, Slice & Sort Method🔥
+-------------------------------*/
 // const pagesAllBooks = books.reduce((sum, book) => sum + book.pages, 0);
-// pagesAllBooks;
+// console.log(pagesAllBooks);
 
 // const arr = [3, 7, 1, 9, 6];
-// const sorted = arr.slice().sort((a, b) => a - b);
-// sorted;
-// arr;
+// const sorted = arr.sort((a, b) => a - b);
+// slice method without any argument is just making a copy of the original array so that sort() does not rearrange it.
+// const sorted = arr.slice().sort((a, b) => a - b);  //ascending order
+// const sorted = arr.slice().sort((a, b) => b - a);  //descending order
+// console.log(sorted);
+// console.log(arr);
 
 // const sortedByPages = books.slice().sort((a, b) => a.pages - b.pages);
-// sortedByPages;
+// console.log(sortedByPages);
 
-// // 1) Add book object to array
+/*-----------------
+ 🔥CRUD in array🔥
+-----------------*/
+// 1) Add book object to array
 // const newBook = {
 //   id: 6,
 //   title: "Harry Potter and the Chamber of Secrets",
 //   author: "J. K. Rowling",
 // };
 // const booksAfterAdd = [...books, newBook];
-// booksAfterAdd;
+// console.log(booksAfterAdd);
 
-// // 2) Delete book object from array
+// 2) Delete book object from array
 // const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
-// booksAfterDelete;
+// console.log(booksAfterDelete);
 
 // // 3) Update book object in the array
 // const booksAfterUpdate = booksAfterDelete.map((book) =>
 //   book.id === 1 ? { ...book, pages: 1210 } : book
 // );
-// booksAfterUpdate;
+// console.log(booksAfterUpdate);
 
+/*----------------------------
+ 🔥Asynchronous JavaScript🔥
+----------------------------*/
+// fetching data from an api takes time thats why, "jonas" will execute first.
 // fetch("https://jsonplaceholder.typicode.com/todos")
 //   .then((res) => res.json())
 //   .then((data) => console.log(data));
 
 // console.log("jonas");
 
-//   async function getTodos() {
-//     const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-//     const data = await res.json();
-//     console.log(data);
+// another way and the better way of writing asynchronous code using 'async & await'.
+// async function getTodos() {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+//   const data = await res.json();
+//   console.log(data);
 
-//     return data;
-//   }
+//   return data;
+// }
 
-//   const todos = getTodos();
-//   console.log(todos);
+// const todos = getTodos();
+// console.log(todos);
 
-//   console.log("jonas");
+// console.log("jonas");

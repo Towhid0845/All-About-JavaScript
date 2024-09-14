@@ -847,17 +847,18 @@
 // const result = str.slice(2, 8);
 // const result = str.slice(2, -5); // last theke 5ta character bad diya print korbe.
 // const result = str.slice(2); // It also works without end agrument.
+// const result = str.slice(); // It also works without any argument.
 // console.log(result);
 
 // example of slice() method ❤️
 // display only 100 character like textarea limits.
 // var myText =
-// 	"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ";
+//   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ";
 // var displayText = myText.slice(0, 100);
 // console.log(displayText);
-// console.log(displayText.length);    // check the length
+// console.log(displayText.length); // check the length
 
-// 2️⃣ sbustring() method 🔥
+// 2️⃣ substring() method 🔥
 // very similer to slice() method, but ignores negetive  agrument.
 // if with put negetive argument, then it doesn't give any error but the ans will be for first argument.
 // const str = "I am Towhid zzaman";
